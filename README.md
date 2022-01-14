@@ -1,4 +1,4 @@
-# One static parking page 
+# ONE STATIC PARKING PAGE
 Modèle de page parking pour une utilisation SEO optimisée
 
 + demo page :
