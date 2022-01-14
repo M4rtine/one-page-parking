@@ -14,7 +14,8 @@ https://seo-one-page.davidmazeau.com/
 + NORTON safe web https://safeweb.norton.com/
 
 
-
+## Font icons
+http://entypo.com/
 
 ## Générer son favicon
 https://realfavicongenerator.net/
