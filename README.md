@@ -2,7 +2,7 @@
 Modèle de page parking pour une utilisation SEO optimisée
 
 + demo page :
-http://seo-one-page.davidmazeau.com/
+https://seo-one-page.davidmazeau.com/
 
 
 
