@@ -1,0 +1,226 @@
+body {
+	background-color: #302F2A;
+    color: rgba(255,255,255,.95);
+    text-shadow: 1px 2px 1.5px rgba(0,0,0,0.2);
+}
+.full-width-height {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/* Titles */
+h1 {
+	font-size: 3rem;
+	text-shadow: 1px 2px 1.5px rgba(0,0,0,0.2);
+}
+h2 {
+	font-size: 2.5rem;
+}
+p {
+	font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+
+}
+.navbar{
+    z-index: 1130 !important;
+}
+.sidebar {
+	margin-top: 5rem;
+	text-indent: 2.3rem;
+}
+.btn-outline-light :hover {
+    color: #000;
+
+}
+.btn-group-lg>.btn, .btn-lg {
+
+    border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+.btn-lg:hover, .btn-lg:focus, .btn-lg:active, .btn-lg.active, .open>.dropdown-toggle.btn-lg {
+    color: #262626;
+    background-color: #fff;
+    border-color: transparent; /*set the color you want here*/
+}
+.btn-light {
+    color: #262626;
+    background-color: #E0E0D4;
+    border-color: transparent;
+}
+.centered {
+    position: absolute;
+    left: 60px;
+    right: 60px;
+    text-align: center;
+
+
+    top: 50%;
+    box-sizing: border-box;
+    -webkit-transform: translatey(-50%);
+    -moz-transform: translatey(-50%);
+    -ms-transform: translatey(-50%);
+    transform: translatey(-50%);
+}
+.centered a {
+	margin: 0 0.5em;
+}
+.socials-icons {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    right: 60px;
+    text-align: center;
+	margin: 0 auto;
+
+}
+.socials-icons a:hover {
+	color: #e5e5e5;
+}
+.socials-icons-bg {
+	background-color: #E0E0D4;
+}
+/* Links */
+a {
+    color: #fafafa;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #000;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a {
+    -webkit-transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.nav-link {
+	font-size: 0.86rem;
+}
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */ 
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(255,255,255); /* Black fallback color */
+    background-color: rgba(255,255,255, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: left; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+	color: #212121;
+	line-height : 1.85rem;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+
+}
+@media screen and (max-width: 640px) {
+    h1 {font-size: 1.65rem;}
+    h2 {font-size: 1.2rem;}
+    p {font-size: 0.95rem;}
+}
+
+
+.logo {
+	text-align: center;
+	margin-top: 70px;
+/*	height: 180px;*/
+}
+#svg-logo, #LOGO {
+	height: 180px !important;
+}
+#LOGO path {
+    fill: white;
+
+}
+#LOGO {
+    /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+    -webkit-filter: drop-shadow( 1px 2px 1.5px rgba(0,0,0,0.1) ); 
+            filter: drop-shadow( 1px 2px 1.5px rgba(0,0,0,0.1) );
+}
+[class^="icon-"], [class*=" icon-"] {
+	font-size: 1.8rem;
+}
+::selection {
+    background: #333;
+    color: #fff;
+}
