@@ -1,7 +1,10 @@
 body {
 	background-color: #302F2A;
     color: rgba(255,255,255,.95);
-    text-shadow: 1px 2px 1.5px rgba(0,0,0,0.2);
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+[class^="cFont-icon-"], [class*=" cFont-icon-"] {
+    text-shadow: 0 0 0 rgba(0,0,0,0);
 }
 .full-width-height {
     position: absolute;
@@ -14,7 +17,7 @@ body {
 /* Titles */
 h1 {
 	font-size: 3rem;
-	text-shadow: 1px 2px 1.5px rgba(0,0,0,0.2);
+	text-shadow: 1px 2px 3px rgba(0,0,0,0.2);
 }
 h2 {
 	font-size: 2.5rem;
@@ -200,26 +203,6 @@ a {
 }
 
 
-.logo {
-	text-align: center;
-	margin-top: 70px;
-/*	height: 180px;*/
-}
-#svg-logo, #LOGO {
-	height: 180px !important;
-}
-#LOGO path {
-    fill: white;
-
-}
-#LOGO {
-    /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
-    -webkit-filter: drop-shadow( 1px 2px 1.5px rgba(0,0,0,0.1) ); 
-            filter: drop-shadow( 1px 2px 1.5px rgba(0,0,0,0.1) );
-}
-[class^="icon-"], [class*=" icon-"] {
-	font-size: 1.8rem;
-}
 ::selection {
     background: #333;
     color: #fff;
