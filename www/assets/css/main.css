@@ -14,17 +14,23 @@ body {
     height: 100%;
     overflow: hidden;
 }
+
+
 /* Titles */
+h1,h2{
+   letter-spacing: 0.3rem; 
+}
 h1 {
-	font-size: 3rem;
-	text-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+	font-size: 1.4vw;
+    
 }
 h2 {
-	font-size: 2.5rem;
+	font-size: 2vw;
 }
 p {
-	font-size: 1.2rem;
-    font-weight: 700;
+	font-size: 2vw;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
 }
 
 /* Paragraph & Typographic */
