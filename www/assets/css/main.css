@@ -1,3 +1,11 @@
+:root {
+    --font-global-size: 1vw;
+}
+
+
+
+
+
 body {
 	background-color: #302F2A;
     color: rgba(255,255,255,.95);
@@ -21,8 +29,7 @@ h1,h2{
    letter-spacing: 0.3rem; 
 }
 h1 {
-	font-size: 1.4vw;
-    
+	font-size: 1.3vw;
 }
 h2 {
 	font-size: 2vw;

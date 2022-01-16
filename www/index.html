@@ -7,7 +7,7 @@
     <base href="">
     <meta charset="utf-8" />
 
-    <meta name="description" content="[ A REMPLIR - DESCRIPTION SEO ]" />
+    <meta class="meta-description-SEO" name="description" content="[ A REMPLIR - DESCRIPTION SEO ]" />
     <meta name="author" content="">
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -32,12 +32,12 @@
     <link rel="canonical" href="[ A REMPLIR - base URL ]" />
 
     <meta property="og:site_name" content="[ A REMPLIR - TITRE SEO ]" />
-    <meta property="og:title" content="[ A REMPLIR - TITRE SEO ]" />
+    <meta class="meta-description-TITLE" property="og:title" content="[ A REMPLIR - TITRE SEO ]" />
     <meta property="og:url" content="[ A REMPLIR - base URL ]" />
     <meta property="og:type" content="website" />
 
 
-    <meta property="og:description" content="[ A REMPLIR - TITRE SEO ]" />
+    <meta class="meta-description-SEO" property="og:description" content="[ A REMPLIR - TITRE SEO ]" />
     <meta property="og:image" content="share-social.jpg" />
     <meta property="og:image:width" content="1500" />
     <meta property="og:image:height" content="1000" />
@@ -46,24 +46,24 @@
 
     <meta itemprop="name" content="[ A REMPLIR - TITRE SEO ]" />
     <meta itemprop="url" content="[ A REMPLIR - base URL ]" />
-    <meta itemprop="description" content="[ A REMPLIR - DESCRIPTION SEO ]" />
+    <meta class="meta-description-SEO" itemprop="description" content="[ A REMPLIR - DESCRIPTION SEO ]" />
     <meta itemprop="thumbnailUrl" content="logo.png" />
 
     <link rel="image_src" href="share-social.jpg" />
 
     <meta itemprop="image" content="share-social.jpg" />
-    <meta name="twitter:title" content="[ A REMPLIR - TITRE SEO ]" />
+    <meta class="meta-description-TITLE" name="twitter:title" content="[ A REMPLIR - TITRE SEO ]" />
     <meta name="twitter:image" content="share-social.jpg" />
     <meta name="twitter:url" content="[ A REMPLIR - base URL ]" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:description" content="[ A REMPLIR - DESCRIPTION SEO ]" />
+    <meta class="meta-description-SEO" name="twitter:description" content="[ A REMPLIR - DESCRIPTION SEO ]" />
 
 
     <!-- WEBMASTER tools -->
     <meta name="google-site-verification" content="[ A REMPLIR - https://search.google.com/ ]" />
 
-    <meta name="dc.title" content="[ A REMPLIR - TITRE SEO ]" />
-    <meta name="dc.description" content="[ A REMPLIR - DESCRIPTION SEO ]" />
+    <meta class="meta-description-TITLE" name="dc.title" content="[ A REMPLIR - TITRE SEO ]" />
+    <meta class="meta-description-SEO" name="dc.description" content="[ A REMPLIR - DESCRIPTION SEO ]" />
     <meta name="dc.relation" content="[ A REMPLIR - base URL ]" />
     <meta name="dc.source" content="[ A REMPLIR - base URL ]" />
     <meta name="dc.language" content="fr_FR" />
@@ -77,10 +77,17 @@
     <meta name="norton-safeweb-site-verification" content="[ A REMPLIR - https://safeweb.norton.com/ ] " />
 
 
-    <title>[ A REMPLIR - TITRE SEO ]</title>
+    <title class="meta-description-TITLE">[ A REMPLIR - TITRE SEO ]</title>
 
-
-
+    <script src="assets/js/variables-seo.js"></script>
+    <script>
+        document.querySelectorAll(".meta-description-SEO").forEach((el) => {
+            el.setAttribute("content", descriptionSEO);
+        });
+        document.querySelectorAll(".meta-description-TITLE").forEach((el) => {
+            el.setAttribute("content", titleSEO);
+        })
+    </script>
 
 
     <!-- CORE style css
