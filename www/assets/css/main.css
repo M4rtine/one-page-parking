@@ -73,11 +73,14 @@ p {
 	margin: 0 auto;
 
 }
+.socials-icons a {
+    color: rgba(255,255,255,0.95);
+}
 .socials-icons a:hover {
-	color: #e5e5e5;
+	color: rgba(255,255,255,0.65);
 }
 .socials-icons-bg {
-	background-color: #E0E0D4;
+	background-color: transparent;
 }
 /* Links */
 a {
