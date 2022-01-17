@@ -1,2 +1,4 @@
-let titleSEO = '*** TITRE SEO ***';
-let descriptionSEO= '*** DESCRIPTION SEO ***'
+
+let titleSEO = "*** TITRE SEO ***", 
+    descriptionSEO = "*** DESCRIPTION SEO ***", 
+    baseURL = "https://www.perdu.com";

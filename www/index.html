@@ -29,11 +29,11 @@
     
     
 
-    <link rel="canonical" href="[ A REMPLIR - base URL ]" />
+    <link class="meta-base-URL" rel="canonical" href="[ A REMPLIR - base URL ]" />
 
     <meta property="og:site_name" content="[ A REMPLIR - TITRE SEO ]" />
     <meta class="meta-description-TITLE" property="og:title" content="[ A REMPLIR - TITRE SEO ]" />
-    <meta property="og:url" content="[ A REMPLIR - base URL ]" />
+    <meta class="meta-base-URL" property="og:url" content="[ A REMPLIR - base URL ]" />
     <meta property="og:type" content="website" />
 
 
@@ -44,8 +44,8 @@
 
 
 
-    <meta itemprop="name" content="[ A REMPLIR - TITRE SEO ]" />
-    <meta itemprop="url" content="[ A REMPLIR - base URL ]" />
+    <meta class="meta-description-TITLE" itemprop="name" content="[ A REMPLIR - TITRE SEO ]" />
+    <meta class="meta-base-URL" itemprop="url" content="[ A REMPLIR - base URL ]" />
     <meta class="meta-description-SEO" itemprop="description" content="[ A REMPLIR - DESCRIPTION SEO ]" />
     <meta itemprop="thumbnailUrl" content="logo.png" />
 
@@ -54,7 +54,7 @@
     <meta itemprop="image" content="share-social.jpg" />
     <meta class="meta-description-TITLE" name="twitter:title" content="[ A REMPLIR - TITRE SEO ]" />
     <meta name="twitter:image" content="share-social.jpg" />
-    <meta name="twitter:url" content="[ A REMPLIR - base URL ]" />
+    <meta class="meta-base-URL" name="twitter:url" content="[ A REMPLIR - base URL ]" />
     <meta name="twitter:card" content="summary" />
     <meta class="meta-description-SEO" name="twitter:description" content="[ A REMPLIR - DESCRIPTION SEO ]" />
 
@@ -64,8 +64,8 @@
 
     <meta class="meta-description-TITLE" name="dc.title" content="[ A REMPLIR - TITRE SEO ]" />
     <meta class="meta-description-SEO" name="dc.description" content="[ A REMPLIR - DESCRIPTION SEO ]" />
-    <meta name="dc.relation" content="[ A REMPLIR - base URL ]" />
-    <meta name="dc.source" content="[ A REMPLIR - base URL ]" />
+    <meta class="meta-base-URL" name="dc.relation" content="[ A REMPLIR - base URL ]" />
+    <meta class="meta-base-URL" name="dc.source" content="[ A REMPLIR - base URL ]" />
     <meta name="dc.language" content="fr_FR" />
 
     <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -86,6 +86,9 @@
         });
         document.querySelectorAll(".meta-description-TITLE").forEach((el) => {
             el.setAttribute("content", titleSEO);
+        });
+        document.querySelectorAll(".meta-base-URL").forEach((el) => {
+            el.setAttribute("content", baseURL);
         })
     </script>
 
