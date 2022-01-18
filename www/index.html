@@ -87,6 +87,7 @@
         document.querySelectorAll(".meta-description-TITLE").forEach((el) => {
             el.setAttribute("content", titleSEO);
         });
+        document.querySelector('title').textContent = titleSEO;
         document.querySelectorAll(".meta-base-URL").forEach((el) => {
             el.setAttribute("content", baseURL);
         })
